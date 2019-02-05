@@ -1,0 +1,6 @@
+app:
+  logPath: clap.log
+  logLevel: debug
+mongo:
+  host: mongo:27017
+  dbName: medcampus

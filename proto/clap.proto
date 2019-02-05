@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pb;
+
+service Clap {
+    rpc Add (Request) returns (Response);
+    rpc Get (Request) returns (Response);
+}
+
+message Request {
+    string service_id = 1;
+}
+
+message Response {
+    int64 claps = 1;
+}
